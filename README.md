@@ -13,16 +13,17 @@ A aplicação que iremos dar início ao desenvolvimento a partir de agora é um 
 
 Nesse primeiro desafio vamos criar algumas funcionalidades básicas que aprendemos ao longo das aulas até aqui. Esse projeto será desenvolvido aos poucos até o fim da sua jornada onde você terá uma aplicação completa envolvendo back-end, front-end e mobile, que será utilizada para a certificação do bootcamp, então, bora pro código!
 
-Um pouco sobre as ferramentas
+## Um pouco sobre as ferramentas
 Você deverá criar a aplicação do zero utilizando o Express, além de precisar configurar as seguintes ferramentas:
 
-Sucrase + Nodemon;
-ESLint + Prettier + EditorConfig;
-Sequelize (Utilize PostgreSQL ou MySQL);
-Funcionalidades
+- Sucrase + Nodemon;
+- ESLint + Prettier + EditorConfig;
+- Sequelize (Utilize PostgreSQL ou MySQL);
+
+## Funcionalidades
 Abaixo estão descritas as funcionalidades que você deve adicionar em sua aplicação.
 
-1. Autenticação
+### 1. Autenticação
 Permita que um usuário se autentique em sua aplicação utilizando e-mail e uma senha.
 
 Crie um usuário administrador utilizando a funcionalidade de seeds do sequelize, essa funcionalidade serve para criarmos registros na base de dados de forma automatizada.
@@ -53,6 +54,7 @@ module.exports = {
 
   down: () => {}
 };
+
 Agora execute:
 
 yarn sequelize db:seed:all
@@ -60,7 +62,8 @@ Agora você tem um usuário na sua base de dados, utilize esse usuário para tod
 
 A autenticação deve ser feita utilizando JWT.
 Realize a validação dos dados de entrada;
-2. Gestão de destinatários
+
+### 2. Gestão de destinatários
 Você agora precisa permitir que destinatários sejam mantidos (cadastrados/atualizados) na aplicação, e esses devem ter o nome do destinatário e campos de endereço: rua, número, complemento, estado, cidade e CEP.
 
 Utilize uma nova tabela no banco de dados chamada recipients para guardar informações do destinatário.
