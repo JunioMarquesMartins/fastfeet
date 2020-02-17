@@ -29,8 +29,9 @@ Permita que um usuário se autentique em sua aplicação utilizando e-mail e uma
 Crie um usuário administrador utilizando a funcionalidade de seeds do sequelize, essa funcionalidade serve para criarmos registros na base de dados de forma automatizada.
 
 Para criar um seed utilize o comando:
-
+```javascript
 yarn sequelize seed:generate --name admin-user
+```
 No arquivo gerado na pasta src/database/seeds adicione o código referente à criação de um usuário administrador:
 ```javascript
 const bcrypt = require("bcryptjs");
@@ -53,7 +54,7 @@ module.exports = {
   },
 
   down: () => {}
-}; 
+};
 ```
 
 Agora execute:
