@@ -53,8 +53,8 @@ module.exports = {
   },
 
   down: () => {}
-};
-
+}; 
+```
 
 Agora execute:
 
