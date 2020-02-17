@@ -32,7 +32,7 @@ Para criar um seed utilize o comando:
 
 yarn sequelize seed:generate --name admin-user
 No arquivo gerado na pasta src/database/seeds adicione o código referente à criação de um usuário administrador:
-
+```javascript
 const bcrypt = require("bcryptjs");
 
 module.exports = {
@@ -54,6 +54,7 @@ module.exports = {
 
   down: () => {}
 };
+
 
 Agora execute:
 
